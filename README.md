@@ -1,23 +1,21 @@
 # Demonstration Service for OpenAD
 
-This is a demonstration service for OpenAD, which lets you calculate the number of atoms for a given SMILES input.
+This is a demonstration service for OpenAD.  
+It uses RDKit to calculate the number of atoms for a given SMILES input.
 
 <br>
 
-## Using this Service
+## Using the Hosted Version
 
 > [!WARNING]  
-> De demo deployment URL below is not yet established. Until then you can [deploy this service](#deploying-this-service) yourself below.
+> De demo deployment is not yet established. Until then you can [deploy this service](#deploying-this-service) yourself below.
 
-> This model is already deployed for usage in our [Colab Demo](https://colab.research.google.com/drive/15iizKPQ9hJ-yexegI1MNpeoqinb6C5-V#scrollTo=BiBWGQAxnhJh) at:
-> ```
-> https://open.accelerate.science/demo
-> ```
+> This model is part of our [Colab Demo](https://colab.research.google.com/drive/15iizKPQ9hJ-yexegI1MNpeoqinb6C5-V#scrollTo=BiBWGQAxnhJh), hence we have a hosted version you can use directly.
 > 
 > To use it, launch OpenAD and run:
 > 
 > ```shell
-> catalog model from remote 'https://open.accelerate.science/demo' as model_demo
+> catalog model from remote 'https://open.accelerate.science/demo' as service_demo
 > ```
 > 
 > More detailed instructions can be found in the [documentation](https://openad.accelerate.science/docs/model-service/deploying-models/#spinning-up-a-service).
@@ -53,30 +51,30 @@ For more detailed instructions and other options, read the [documentation](https
     docker run -p 9000:8080 openad_service_demo
     ```
 
-The service should now be running at [localhost:8080](http://localhost:8080/)
+The service should now be running at [localhost:9000](http://localhost:9000)
 
 <br>
 
-## Using the Service
+## Using this Service
 
 1. Launch OpenAD
 
     ```shell
     openad
     ```
-    
+
 2. Catalog the service
 
     ```shell
-    catalog model service from remote 'http://localhost:8080' as service_demo
+    catalog model service from remote 'http://localhost:9000' as service_demo
     ```
-    
+
 3. See the available commands for this service:
 
     ```shell
     service_demo ?
     ```
-    
+
 4. Use the service
 
     ```shell
