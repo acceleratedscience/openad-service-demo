@@ -8,7 +8,7 @@ It uses RDKit to calculate the number of atoms for a given SMILES input.
 ## Using the Hosted Version
 
 > [!WARNING]  
-> De demo deployment is not yet established. Until then you can [deploy this service](#deploying-this-service) yourself below.
+> De hosted version is not yet established. Until it is you can [deploy this service](#deploying-this-service) yourself below.
 
 > This model is part of our [Colab Demo](https://colab.research.google.com/drive/15iizKPQ9hJ-yexegI1MNpeoqinb6C5-V#scrollTo=BiBWGQAxnhJh), hence we have a hosted version you can use directly.
 > 
@@ -45,7 +45,8 @@ For more detailed instructions and other options, read the [documentation](https
     docker build -t openad_service_demo .
     ```
 
-2. Create the docker container, we'll map it to port 9000
+2. Create the docker container
+    We'll map it to port 9000 with `-p 9000:8080` and detach it with `-d` so the process exits as soon as the service is set up.
     
     ```
     docker run -p 9000:8080 openad_service_demo
