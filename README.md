@@ -45,7 +45,7 @@ For more detailed instructions and other options, read the [documentation](https
     docker build -t openad_service_demo .
     ```
 
-2. Create the docker container
+2. Create the docker container  
     We'll map it to port 9000 with `-p 9000:8080` and detach it with `-d` so the process exits as soon as the service is set up.
     
     ```
