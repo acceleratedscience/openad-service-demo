@@ -22,9 +22,9 @@ RUN apt-get update && apt-get install -y redis-server && apt-get clean
 COPY . .
 
 # Expose the network port
-EXPOSE 8081
+EXPOSE 8080
 
 # Specify the command to run when the container starts
-# CMD cd /app/data && redis-server --daemonize yes && python ../demo_implementation.py
+# CMD cd /app/data && redis-server --daemonize yes && python ../app.py
 # JSON array syntax to ensure proper signal handling
-CMD ["sh", "-c", "cd /app/data && redis-server --daemonize yes && python ../demo_implementation.py"]
+CMD ["sh", "-c", "cd /app/data && redis-server --daemonize yes && python ../app.py"]
