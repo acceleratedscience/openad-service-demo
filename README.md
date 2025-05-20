@@ -55,21 +55,30 @@ For more detailed instructions and other options, read the [documentation](https
 
 The service should now be running at [localhost:8080](http://localhost:8080/)
 
-Next, launch OpenAD and catalog the service:
+<br>
+
+## Using the Service
 
 1. Launch OpenAD
+
     ```shell
     openad
     ```
+    
 2. Catalog the service
+
     ```shell
     catalog model service from remote 'http://localhost:8080' as service_demo
     ```
+    
 3. See the available commands for this service:
+
     ```shell
     service_demo ?
     ```
+    
 4. Use the service
+
     ```shell
     service_demo get molecule property num_atoms for CC
     ```
