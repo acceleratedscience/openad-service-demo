@@ -83,5 +83,8 @@ The service should now be running at [localhost:9000](http://localhost:9000)
     ```shell
     service_demo get molecule property num_atoms for CC
     ```
+    ```shell
+    service_demo get molecule property num_atoms for NCCc1c[nH]c2ccc(O)cc12
+    ```
 
 For more details on how to use services with OpenAD, read the [documentation](https://openad.accelerate.science/docs/model-service).
