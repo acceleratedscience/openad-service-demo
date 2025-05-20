@@ -9,15 +9,18 @@ This is a demonstration service for OpenAD, which lets you calculate the number 
 > [!WARNING]  
 > De demo deployment URL below is not yet established. Until then you can [deploy this service](#deploying-this-service) yourself below.
 
-This model is already deployed for usage in our [Colab Demo](https://colab.research.google.com/drive/15iizKPQ9hJ-yexegI1MNpeoqinb6C5-V#scrollTo=BiBWGQAxnhJh): [open.accelerate.science/demo](https://open.accelerate.science/demo)
-
-In OpenAD, run:
-
-```shell
-catalog model from remote 'https://open.accelerate.science/demo' as model_demo
-```
-
-More detailed instructions can be found in the [documentation](https://openad.accelerate.science/docs/model-service/deploying-models/#spinning-up-a-service).
+> This model is already deployed for usage in our [Colab Demo](https://colab.research.google.com/drive/15iizKPQ9hJ-yexegI1MNpeoqinb6C5-V#scrollTo=BiBWGQAxnhJh):
+> ```
+> https://open.accelerate.science/demo
+> ```
+> 
+> In OpenAD, run:
+> 
+> ```shell
+> catalog model from remote 'https://open.accelerate.science/demo' as model_demo
+> ```
+> 
+> More detailed instructions can be found in the [documentation](https://openad.accelerate.science/docs/model-service/deploying-models/#spinning-up-a-service).
 
 <br>
 
