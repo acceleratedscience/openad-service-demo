@@ -27,4 +27,4 @@ EXPOSE 8080
 # Specify the command to run when the container starts
 # CMD cd /app/data && redis-server --daemonize yes && python ../app.py
 # JSON array syntax to ensure proper signal handling
-CMD ["sh", "-c", "cd /app/data && redis-server --daemonize yes && python ../app.py"]
+CMD ["sh", "-c", "cd /app/data && redis-server --daemonize yes && python app.py"]
