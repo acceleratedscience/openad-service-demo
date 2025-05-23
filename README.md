@@ -71,21 +71,21 @@ The service should now be running at [localhost:9000](http://localhost:9000)
 2. Catalog the service
 
     ```shell
-    catalog model service from remote 'http://localhost:9000' as service_demo
+    catalog model service from remote 'http://localhost:9000' as demo_service
     ```
 
 3. See the available commands for this service:
 
     ```shell
-    service_demo ?
+    demo_service ?
     ```
 
 4. Use the service
 
     ```shell
-    service_demo get molecule property num_atoms for CC
+    demo_service get molecule property num_atoms for CC
     ```
 
     ```shell
-    service_demo get molecule property num_atoms for NCCc1c[nH]c2ccc(O)cc12
+    demo_service get molecule property num_atoms for NCCc1c[nH]c2ccc(O)cc12
     ```
