@@ -12,7 +12,8 @@ It uses RDKit to calculate the number of atoms for a given SMILES input.
 
 ## Using the Build-in Version
 
-You can spin up this model from within OpenAD by running the command below. Further instructions will be displayed.
+You can spin up this model from within OpenAD by running the command below.  
+Further instructions will be displayed.
 
 ```shell
 model service demo
