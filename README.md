@@ -6,11 +6,12 @@ It uses RDKit to calculate the number of atoms for a given SMILES input.
 ### Working with Services
 
 -   For a hand-on example, check out our [Colab Demo](https://colab.research.google.com/drive/15iizKPQ9hJ-yexegI1MNpeoqinb6C5-V)
+-   To see how to use this service, jump to [Using this Service](#using-this-service) below
 -   For more details, read the [documentation](https://openad.accelerate.science/docs/model-service/using-models)
 
 <br>
 
-## Using the Build-in Version
+## Using the Built-in Version
 
 You can spin up this model from within OpenAD by running the command below.  
 Further instructions will be displayed.
@@ -86,5 +87,3 @@ The service should now be running at [localhost:9000](http://localhost:9000)
     ```shell
     service_demo get molecule property num_atoms for NCCc1c[nH]c2ccc(O)cc12
     ```
-
-For more details on how to use services with OpenAD, read the [documentation](https://openad.accelerate.science/docs/model-service).
